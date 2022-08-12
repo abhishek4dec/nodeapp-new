@@ -8,7 +8,11 @@ pipeline {
        
      stages {
         
-    
+    stage('CheckOut') {
+            steps {
+                 git credentialsId:'abhishek4dec', 'https://github.com/abhishek4dec/nodeapp-new.git'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
