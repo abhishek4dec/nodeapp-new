@@ -8,7 +8,7 @@ pipeline {
      stages {
         stage('CheckOut') {
             steps {
-                 git credentialsId:'jenkins', 'https://github.com/abhishek4dec/nodeapp-new.git'
+                 git credentialsId:'abhishek4dec', 'https://github.com/abhishek4dec/nodeapp-new.git'
             }
         }
     stages {
