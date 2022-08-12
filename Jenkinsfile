@@ -5,6 +5,9 @@ pipeline {
             args '-p 3000:3000'
         }
     }
+    tools{
+        nodejs 'NodeJS'
+    }
        
      stages {
         
@@ -16,7 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "bhishek Build Step"
-                //sh 'npm install'
+                sh 'npm install'
             }
         }
      }    
