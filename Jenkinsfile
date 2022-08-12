@@ -10,7 +10,7 @@ pipeline {
         
     stage('CheckOut') {
             steps {
-                 git credentialsId:'abhishek4dec', 'https://github.com/abhishek4dec/nodeapp-new.git'
+                 git 'https://github.com/abhishek4dec/nodeapp-new.git'
             }
         }
         stage('Build') {
