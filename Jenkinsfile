@@ -5,7 +5,9 @@ pipeline {
             args '-p 3000:3000'
         }
     }
-    
+    tools {
+         nodejs 'nodejs18.7.0'
+       }
        
      stages {
         
