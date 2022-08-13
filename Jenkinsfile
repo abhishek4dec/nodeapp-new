@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "bhishek Build Step"
-                sh 'npm install'
+                sh 'npm version'
             }
         }
      }    
